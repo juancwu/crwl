@@ -1,6 +1,6 @@
 {
   "name": "crwl",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "Extensible web crawler with page object design pattern.",
   "main": "build/index.js",
   "type": "commonjs",
