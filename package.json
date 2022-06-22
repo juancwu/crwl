@@ -56,6 +56,10 @@
   ],
   "private": false,
   "homepage": "https://github.com/juancwu/crwl",
+  "repository": {
+    "url": "git+https://github.com/juancwu/crwl.git",
+    "type": "git"
+  },
   "bugs": {
     "url": "https://github.com/juancwu/crwl/issues"
   }
