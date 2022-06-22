@@ -1,12 +1,12 @@
 const puppeteer = require("puppeteer");
-const Page = require("../../build/cjs/crwl").default;
+const { crwl } = require("../../build");
 
 // define a page that has functions on how to scrape data from a trimmed html tree.
-class GooglePage extends Page {
+class GooglePage extends crwl.Page {
   /**
    *
    * @param {puppeteer.Browser} browser
-   * @param {import("../build").PageOptions} options
+   * @param {import("../../build/lib/page").PageOptions} options
    */
   constructor(browser, options) {
     super(browser, options);
@@ -69,7 +69,7 @@ class GooglePage extends Page {
 
   await googlePage.trimPage();
 
-  await googlePage.saveAs("google.html", "./examples");
+  await googlePage.saveAs("google.html", "./examples/cjs");
 
   await browser.close();
 })();

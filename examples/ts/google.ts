@@ -1,25 +1,14 @@
-import * as puppeteer from "puppeteer";
-import Page from "../../build/esm/crwl";
+import { Browser, launch } from "puppeteer";
+import { crwl } from "../../build";
 
-// define a page that has functions on how to scrape data from a trimmed html tree.
-class GooglePage extends Page {
-  /**
-   *
-   * @param {puppeteer.Browser} browser
-   * @param {import("../build").PageOptions} options
-   */
-  constructor(browser, options) {
+class GooglePage extends crwl.Page {
+  constructor(browser: Browser, options: crwl.PageOptions) {
     super(browser, options);
 
     this._name = "Google Page";
   }
 
-  /**
-   *
-   * @param {string} query
-   * @returns
-   */
-  async search(query) {
+  async search(query: string) {
     if (!this._page) {
       throw new Error("Goolge page not opened, cannot search.");
     }
@@ -49,7 +38,7 @@ class GooglePage extends Page {
 // start scraping
 (async () => {
   // create new browser first
-  const browser = await puppeteer.launch({
+  const browser = await launch({
     args: ["--no-sandbox"], // this is needed when running as root user
   });
 
@@ -69,7 +58,7 @@ class GooglePage extends Page {
 
   await googlePage.trimPage();
 
-  await googlePage.saveAs("google.html", "./examples");
+  await googlePage.saveAs("google.html", "./examples/cjs");
 
   await browser.close();
 })();

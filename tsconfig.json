@@ -23,12 +23,14 @@
     "strictFunctionTypes": true,
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
-    "target": "ES2019",
+    "target": "es2019",
+    "module": "commonjs",
     "useUnknownInCatchVariables": true,
     "pretty": true,
     "traceResolution": false,
     "rootDir": "src",
-    "baseUrl": "src"
+    "baseUrl": "src",
+    "outDir": "build"
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "build"]
