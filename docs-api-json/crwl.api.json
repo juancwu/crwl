@@ -161,18 +161,18 @@
     }
   },
   "kind": "Package",
-  "canonicalReference": "@juancwu/crwl!",
+  "canonicalReference": "crwl!",
   "docComment": "",
-  "name": "@juancwu/crwl",
+  "name": "crwl",
   "members": [
     {
       "kind": "EntryPoint",
-      "canonicalReference": "@juancwu/crwl!",
+      "canonicalReference": "crwl!",
       "name": "",
       "members": [
         {
           "kind": "Class",
-          "canonicalReference": "@juancwu/crwl!Page:class",
+          "canonicalReference": "crwl!Page:class",
           "docComment": "",
           "excerptTokens": [
             {
@@ -194,7 +194,7 @@
           "members": [
             {
               "kind": "Property",
-              "canonicalReference": "@juancwu/crwl!Page#_browser:member",
+              "canonicalReference": "crwl!Page#_browser:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -224,7 +224,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@juancwu/crwl!Page#_name:member",
+              "canonicalReference": "crwl!Page#_name:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -253,7 +253,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@juancwu/crwl!Page#_options:member",
+              "canonicalReference": "crwl!Page#_options:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -263,7 +263,7 @@
                 {
                   "kind": "Reference",
                   "text": "PageOptions",
-                  "canonicalReference": "@juancwu/crwl!PageOptions:interface"
+                  "canonicalReference": "crwl!PageOptions:interface"
                 },
                 {
                   "kind": "Content",
@@ -283,7 +283,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@juancwu/crwl!Page#_page:member",
+              "canonicalReference": "crwl!Page#_page:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -317,7 +317,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@juancwu/crwl!Page#_root:member",
+              "canonicalReference": "crwl!Page#_root:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -360,7 +360,7 @@
             },
             {
               "kind": "Constructor",
-              "canonicalReference": "@juancwu/crwl!Page:constructor(1)",
+              "canonicalReference": "crwl!Page:constructor(1)",
               "docComment": "/**\n * Constructs a new instance of the `Page` class\n */\n",
               "excerptTokens": [
                 {
@@ -379,7 +379,7 @@
                 {
                   "kind": "Reference",
                   "text": "PageOptions",
-                  "canonicalReference": "@juancwu/crwl!PageOptions:interface"
+                  "canonicalReference": "crwl!PageOptions:interface"
                 },
                 {
                   "kind": "Content",
@@ -410,7 +410,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@juancwu/crwl!Page#html:member",
+              "canonicalReference": "crwl!Page#html:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -439,7 +439,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@juancwu/crwl!Page#name:member",
+              "canonicalReference": "crwl!Page#name:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -468,7 +468,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@juancwu/crwl!Page#open:member(1)",
+              "canonicalReference": "crwl!Page#open:member(1)",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -546,7 +546,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@juancwu/crwl!Page#root:member",
+              "canonicalReference": "crwl!Page#root:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -589,7 +589,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@juancwu/crwl!Page#saveAs:member(1)",
+              "canonicalReference": "crwl!Page#saveAs:member(1)",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -657,7 +657,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "@juancwu/crwl!Page#trimPage:member(1)",
+              "canonicalReference": "crwl!Page#trimPage:member(1)",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -667,7 +667,7 @@
                 {
                   "kind": "Reference",
                   "text": "Schema",
-                  "canonicalReference": "@juancwu/crwl!Schema:interface"
+                  "canonicalReference": "crwl!Schema:interface"
                 },
                 {
                   "kind": "Content",
@@ -717,7 +717,7 @@
         },
         {
           "kind": "Interface",
-          "canonicalReference": "@juancwu/crwl!PageOptions:interface",
+          "canonicalReference": "crwl!PageOptions:interface",
           "docComment": "",
           "excerptTokens": [
             {
@@ -730,7 +730,7 @@
           "members": [
             {
               "kind": "PropertySignature",
-              "canonicalReference": "@juancwu/crwl!PageOptions#baseUrl:member",
+              "canonicalReference": "crwl!PageOptions#baseUrl:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -757,7 +757,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "@juancwu/crwl!PageOptions#name:member",
+              "canonicalReference": "crwl!PageOptions#name:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -784,7 +784,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "@juancwu/crwl!PageOptions#schema:member",
+              "canonicalReference": "crwl!PageOptions#schema:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -794,7 +794,7 @@
                 {
                   "kind": "Reference",
                   "text": "Schema",
-                  "canonicalReference": "@juancwu/crwl!Schema:interface"
+                  "canonicalReference": "crwl!Schema:interface"
                 },
                 {
                   "kind": "Content",
@@ -815,7 +815,7 @@
         },
         {
           "kind": "Interface",
-          "canonicalReference": "@juancwu/crwl!Schema:interface",
+          "canonicalReference": "crwl!Schema:interface",
           "docComment": "/**\n * Adding an exlucde array when there is an include array, does not do anything.\n */\n",
           "excerptTokens": [
             {
@@ -828,7 +828,7 @@
           "members": [
             {
               "kind": "PropertySignature",
-              "canonicalReference": "@juancwu/crwl!Schema#exclude:member",
+              "canonicalReference": "crwl!Schema#exclude:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -855,7 +855,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "@juancwu/crwl!Schema#include:member",
+              "canonicalReference": "crwl!Schema#include:member",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -882,7 +882,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "@juancwu/crwl!Schema#rootElement:member",
+              "canonicalReference": "crwl!Schema#rootElement:member",
               "docComment": "",
               "excerptTokens": [
                 {
