@@ -54,5 +54,9 @@
   "files": [
     "build"
   ],
-  "private": false
+  "private": false,
+  "homepage": "https://github.com/juancwu/crwl",
+  "bugs": {
+    "url": "https://github.com/juancwu/crwl/issues"
+  }
 }
