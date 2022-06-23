@@ -58,7 +58,7 @@ class GooglePage extends crwl.Page {
 
   await googlePage.trimPage();
 
-  await googlePage.saveAs("google.html", "./examples/cjs");
+  await googlePage.saveAs("google.html", "./examples/ts");
 
   await browser.close();
 })();
