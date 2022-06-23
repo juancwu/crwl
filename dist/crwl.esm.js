@@ -579,7 +579,7 @@ var Page = /*#__PURE__*/function (_EventEmitter) {
                 for (_iterator2 = _createForOfIteratorHelperLoose(schema.exclude); !(_step2 = _iterator2()).done;) {
                   _elSelector = _step2.value;
 
-                  this._root.remove(_elSelector);
+                  this._root.find(_elSelector).remove();
                 }
               }
 
