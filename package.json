@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Extensible web crawler with page object design pattern.",
   "main": "dist/index.js",
-  "type": "commonjs",
+  "module": "dist/crwl.esm.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsdx build"
