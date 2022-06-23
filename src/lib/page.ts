@@ -96,12 +96,6 @@ export class Page extends EventEmitter {
       );
     }
 
-    if (schema.exclude && schema.exclude.length > 0) {
-      for (let elSelector of schema.exclude) {
-        root.remove(elSelector);
-      }
-    }
-
     this._root = root;
 
     if (schema.include && schema.include.length > 0) {
@@ -115,6 +109,13 @@ export class Page extends EventEmitter {
       }
 
       this._root = newRoot;
+    }
+
+    if (schema.exclude && schema.exclude.length > 0) {
+      // remove from current root
+      for (let elSelector of schema.exclude) {
+        this._root.remove(elSelector);
+      }
     }
 
     return this._root.html();
