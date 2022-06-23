@@ -114,7 +114,7 @@ export class Page extends EventEmitter {
     if (schema.exclude && schema.exclude.length > 0) {
       // remove from current root
       for (let elSelector of schema.exclude) {
-        this._root.remove(elSelector);
+        this._root.find(elSelector).remove();
       }
     }
 
