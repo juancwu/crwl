@@ -1,6 +1,6 @@
 {
   "name": "crwl",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Extensible web crawler with page object design pattern.",
   "main": "dist/index.js",
   "module": "dist/crwl.esm.js",
