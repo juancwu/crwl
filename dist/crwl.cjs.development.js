@@ -530,7 +530,7 @@ var Page = /*#__PURE__*/function (_EventEmitter) {
     var _trimPage = /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(schema) {
       var _schema$rootElement;
 
-      var pageSource, $, root, _iterator, _step, elSelector, newRoot, _iterator2, _step2, _elSelector, currentElement;
+      var pageSource, $, root, newRoot, _iterator, _step, elSelector, currentElement, _iterator2, _step2, _elSelector;
 
       return _regeneratorRuntime().wrap(function _callee2$(_context2) {
         while (1) {
@@ -565,26 +565,28 @@ var Page = /*#__PURE__*/function (_EventEmitter) {
               throw new Error("Could not find root element as specified in schema in page: " + this._options.name);
 
             case 10:
-              if (schema.exclude && schema.exclude.length > 0) {
-                for (_iterator = _createForOfIteratorHelperLoose(schema.exclude); !(_step = _iterator()).done;) {
-                  elSelector = _step.value;
-                  root.remove(elSelector);
-                }
-              }
-
               this._root = root;
 
               if (schema.include && schema.include.length > 0) {
                 // empty root to start including just the elements we want
                 newRoot = root.clone().empty();
 
-                for (_iterator2 = _createForOfIteratorHelperLoose(schema.include); !(_step2 = _iterator2()).done;) {
-                  _elSelector = _step2.value;
-                  currentElement = root.find(_elSelector);
+                for (_iterator = _createForOfIteratorHelperLoose(schema.include); !(_step = _iterator()).done;) {
+                  elSelector = _step.value;
+                  currentElement = root.find(elSelector);
                   newRoot.append(currentElement);
                 }
 
                 this._root = newRoot;
+              }
+
+              if (schema.exclude && schema.exclude.length > 0) {
+                // remove from current root
+                for (_iterator2 = _createForOfIteratorHelperLoose(schema.exclude); !(_step2 = _iterator2()).done;) {
+                  _elSelector = _step2.value;
+
+                  this._root.remove(_elSelector);
+                }
               }
 
               return _context2.abrupt("return", this._root.html());
