@@ -1,5 +1,5 @@
 const puppeteer = require("puppeteer");
-const { crwl } = require("../../build");
+const crwl = require("../../dist");
 
 // define a page that has functions on how to scrape data from a trimmed html tree.
 class GooglePage extends crwl.Page {

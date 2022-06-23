@@ -1,5 +1,5 @@
 import { Browser, launch } from "puppeteer";
-import { crwl } from "../../build";
+import crwl from "../../dist";
 
 class GooglePage extends crwl.Page {
   constructor(browser: Browser, options: crwl.PageOptions) {

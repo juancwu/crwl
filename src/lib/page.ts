@@ -27,8 +27,10 @@ export interface PageOptions {
   schema?: Schema;
 }
 
+export interface PuppeteerBrowser extends Browser {}
+
 export class Page extends EventEmitter {
-  protected _browser: Browser;
+  protected _browser: PuppeteerBrowser;
   protected _page: PuppeteerPage | null;
   protected _options: PageOptions;
   protected _root: Cheerio<AnyNode> | null;

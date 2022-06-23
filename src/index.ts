@@ -1,2 +1,3 @@
-import * as crwl from "./lib/page";
-export { crwl };
+import { Page, PageOptions, Schema, PuppeteerBrowser } from "./lib/page";
+
+export { Page, PageOptions, Schema, PuppeteerBrowser };
